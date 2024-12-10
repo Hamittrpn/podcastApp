@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		95EC555D2D086869005969BC /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 95EC555C2D086869005969BC /* SnapKit */; };
+		95EC55BD2D088CF3005969BC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 95EC55BC2D088CF3005969BC /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95EC555D2D086869005969BC /* SnapKit in Frameworks */,
+				95EC55BD2D088CF3005969BC /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +143,7 @@
 			name = podcastApp;
 			packageProductDependencies = (
 				95EC555C2D086869005969BC /* SnapKit */,
+				95EC55BC2D088CF3005969BC /* Alamofire */,
 			);
 			productName = podcastApp;
 			productReference = 956A5FDF2D07A00B00EA3E50 /* podcastApp.app */;
@@ -692,6 +695,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 95B876742D08676B00B16680 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		95EC55BC2D088CF3005969BC /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 956A60132D07A30B00EA3E50 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
