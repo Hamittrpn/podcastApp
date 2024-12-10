@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		95EC555D2D086869005969BC /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 95EC555C2D086869005969BC /* SnapKit */; };
 		95EC55BD2D088CF3005969BC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 95EC55BC2D088CF3005969BC /* Alamofire */; };
+		95EC55C12D088F8D005969BC /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 95EC55C02D088F8D005969BC /* RealmSwift */; };
+		95EC55C32D088F8D005969BC /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 95EC55C02D088F8D005969BC /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,20 @@
 			remoteInfo = podcastApp;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		95EC55C22D088F8D005969BC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				95EC55C32D088F8D005969BC /* RealmSwift in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		956A5FDF2D07A00B00EA3E50 /* podcastApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = podcastApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95EC55C12D088F8D005969BC /* RealmSwift in Frameworks */,
 				95EC555D2D086869005969BC /* SnapKit in Frameworks */,
 				95EC55BD2D088CF3005969BC /* Alamofire in Frameworks */,
 			);
@@ -131,6 +148,7 @@
 				956A5FDC2D07A00B00EA3E50 /* Frameworks */,
 				956A5FDD2D07A00B00EA3E50 /* Resources */,
 				956A60192D07A5E400EA3E50 /* Swiftlint */,
+				95EC55C22D088F8D005969BC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,6 +162,7 @@
 			packageProductDependencies = (
 				95EC555C2D086869005969BC /* SnapKit */,
 				95EC55BC2D088CF3005969BC /* Alamofire */,
+				95EC55C02D088F8D005969BC /* RealmSwift */,
 			);
 			productName = podcastApp;
 			productReference = 956A5FDF2D07A00B00EA3E50 /* podcastApp.app */;
@@ -700,6 +719,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 956A60132D07A30B00EA3E50 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		95EC55C02D088F8D005969BC /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 956A60172D07A53500EA3E50 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
