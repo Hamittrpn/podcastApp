@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		951C5BF72D099AEC00A1BFB5 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 951C5BF62D099AEC00A1BFB5 /* Swinject */; };
 		95EC555D2D086869005969BC /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 95EC555C2D086869005969BC /* SnapKit */; };
 		95EC55BD2D088CF3005969BC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 95EC55BC2D088CF3005969BC /* Alamofire */; };
 		95EC55C12D088F8D005969BC /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 95EC55C02D088F8D005969BC /* RealmSwift */; };
@@ -89,6 +90,7 @@
 				95EC55C12D088F8D005969BC /* RealmSwift in Frameworks */,
 				95EC555D2D086869005969BC /* SnapKit in Frameworks */,
 				95EC55BD2D088CF3005969BC /* Alamofire in Frameworks */,
+				951C5BF72D099AEC00A1BFB5 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +165,7 @@
 				95EC555C2D086869005969BC /* SnapKit */,
 				95EC55BC2D088CF3005969BC /* Alamofire */,
 				95EC55C02D088F8D005969BC /* RealmSwift */,
+				951C5BF62D099AEC00A1BFB5 /* Swinject */,
 			);
 			productName = podcastApp;
 			productReference = 956A5FDF2D07A00B00EA3E50 /* podcastApp.app */;
@@ -366,7 +369,6 @@
 				INFOPLIST_FILE = podcastApp/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -393,7 +395,6 @@
 				INFOPLIST_FILE = podcastApp/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -705,6 +706,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		951C5BF62D099AEC00A1BFB5 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 956A60142D07A39700EA3E50 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
 		956A601A2D07AAD500EA3E50 /* SwiftLintBuildToolPlugin */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 956A60162D07A49B00EA3E50 /* XCRemoteSwiftPackageReference "SwiftLint" */;
