@@ -13,8 +13,16 @@ class BaseView<T: UIViewController>: UIView, MainThreadRunner {
     init(_ controller: T) {
         self.controller = controller
         super.init(frame: .zero)
-//        backgroundColor = Theme.defaultTheme.themeColor.backgroundColor
+        backgroundColor = appTheme.colorTheme.primaryColor
         setupView()
+    }
+    
+     var appTheme: AppTheme {
+         ThemeManager.defaultTheme
+    }
+    
+    static var currentTheme: AppTheme {
+        return ThemeManager.defaultTheme
     }
 
     func setupView() { }
