@@ -117,7 +117,6 @@
 				956A5FE12D07A00B00EA3E50 /* podcastApp */,
 				956A5FF82D07A00D00EA3E50 /* podcastAppTests */,
 				956A60022D07A00D00EA3E50 /* podcastAppUITests */,
-				95EC555B2D086869005969BC /* Frameworks */,
 				956A5FE02D07A00B00EA3E50 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -132,13 +131,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		95EC555B2D086869005969BC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,6 +143,7 @@
 				956A5FDD2D07A00B00EA3E50 /* Resources */,
 				956A60192D07A5E400EA3E50 /* Swiftlint */,
 				95EC55C22D088F8D005969BC /* Embed Frameworks */,
+				951C5C152D0B1FE600A1BFB5 /* Swiftlint Completer */,
 			);
 			buildRules = (
 			);
@@ -246,6 +239,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = 956A5FD62D07A00B00EA3E50;
 			minimizedProjectReferenceProxies = 1;
@@ -296,6 +290,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		951C5C152D0B1FE600A1BFB5 /* Swiftlint Completer */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swiftlint Completer";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint > /dev/null; then\n    swiftlint autocorrect\n    swiftlint\nfi\n";
+		};
 		956A60192D07A5E400EA3E50 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -469,6 +481,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -525,6 +538,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
