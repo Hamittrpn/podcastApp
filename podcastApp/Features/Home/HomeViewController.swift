@@ -9,7 +9,6 @@
 import UIKit
 
 final class HomeViewController: UIViewController, NavigationView {
-    
     // MARK: - Properties
     var presenter: ViewToPresenterHomeProtocol!
 
@@ -19,9 +18,7 @@ final class HomeViewController: UIViewController, NavigationView {
         view = HomeView(self)
         view.backgroundColor = .white
     }
-     
 }
 
 extension HomeViewController: PresenterToViewHomeProtocol{
-    // TODO: Implement View Output Methods
 }

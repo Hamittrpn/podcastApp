@@ -10,8 +10,7 @@ import Foundation
 
 
 // MARK: View Output (Presenter -> View)
-protocol PresenterToViewHomeProtocol {
-   
+protocol PresenterToViewHomeProtocol : AnyObject {
 }
 
 
@@ -22,7 +21,6 @@ protocol ViewToPresenterHomeProtocol {
 
 // MARK: Interactor Input (Presenter -> Interactor)
 protocol PresenterToInteractorHomeProtocol {
-    
     var presenter: InteractorToPresenterHomeProtocol? { get set }
 }
 
